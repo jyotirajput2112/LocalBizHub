@@ -1,16 +1,30 @@
-# React + Vite
+# LocalBizHub - Full-Stack Local Business Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LocalBizHub is a modern, containerized full-stack web application designed to connect local businesses with consumers. It features a React frontend, Node.js/Express backend, and is fully orchestrated using Docker and Nginx reverse proxy.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tech Stack
+* **Frontend:** React (Vite), HTML5, CSS3, JavaScript
+* **Backend:** Node.js, Express.js (v20-alpine)
+* **Web Server & Reverse Proxy:** Nginx
+* **Containerization:** Docker & Docker Compose
+* **Version Control:** Git & GitHub
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🏗️ Architecture Flow
+1. **Client Request:** Users access the application via browser on port `80`.
+2. **Nginx Reverse Proxy:** Routes incoming traffic, serving static frontend assets and proxying API calls to the backend server.
+3. **Backend API:** Node.js Express server handles business logic and responds to client actions.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Local Development & Docker Setup
+
+To run the application locally using Docker Compose, ensure you have Docker installed and running on your machine (WSL 2 on Windows).
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/jyotirajput2112/LocalBizHub.git](https://github.com/jyotirajput2112/LocalBizHub.git)
+cd LocalBizHub
